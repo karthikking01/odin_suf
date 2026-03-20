@@ -1,0 +1,19 @@
+#left {
+  width: 40vw;
+  height: 100vh;
+  background-image: url("assets/left.jpg");
+}
+.flexed {
+  display: flex;
+}
+
+#logogrp {
+  height: 20%;
+  width: inherit;
+  background-color: black;
+}
+
+#logogrp img {
+  height: 90%;
+  justify-self: centre;
+}
