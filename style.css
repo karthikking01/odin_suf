@@ -1,7 +1,17 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("assets/Norsebold.otf");
+}
+
+* {
+  margin: 0;
+}
+
 #left {
-  width: 40vw;
+  width: 30vw;
   height: 100vh;
   background-image: url("assets/left.jpg");
+  background-size: cover;
 }
 .flexed {
   display: flex;
@@ -10,10 +20,21 @@
 #logogrp {
   height: 20%;
   width: inherit;
-  background-color: black;
+  background: rgba(0, 0, 0, 0.2);
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 20%;
 }
 
 #logogrp img {
   height: 90%;
-  justify-self: centre;
+  opacity: 1;
+  margin: 0;
+}
+
+#logogrp h1 {
+  font-family: "Norse Bold";
+  font-size: 750%;
+  color: #fff;
 }
