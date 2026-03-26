@@ -8,16 +8,58 @@
     <script src="script.js" defer></script>
   </head>
   <body class="flexed">
-      <div class="flexed" id="left">
-        <div class="flexed" id="logogrp">
-          <img src="assets/odin-lined.png" alt="Odin project logo" />
-          <h1>ODIN</h1>
-        </div>
+    <div class="flexed" id="left">
+      <div class="flexed" id="logogrp">
+        <img src="assets/odin-lined.png" alt="Odin project logo" />
+        <h1>ODIN</h1>
       </div>
-        <div class="flexed" id="right">
-          <div id="top" class="flexed"><p>"You are a worm though time. The thunder song distorts you. Happiness comes. White pearls, but yellow and red in the eye. Through a mirror, inverted is made right. Leave your insides by the door. Push the fingers through the surface into the wet."</p></div>
-          <form action="submit" class="flexed"></form>
-        </div>
+    </div>
+    <div class="flexed" id="right">
+      <div id="top" class="flexed">
+        <p>
+          "You are a worm though time. The thunder song distorts you. Happiness
+          comes. White pearls, but yellow and red in the eye. Through a mirror,
+          inverted is made right. Leave your insides by the door. Push the
+          fingers through the surface into the wet."
+        </p>
       </div>
+      <form id="form">
+        <h2>Gimme that juicy data!</h2>
+        <div id="fieldcont">
+          <div id="form-left">
+            <div class="inp-grp">
+              <label for="fname" class="label">FIRST NAME</label>
+              <input type="text" class="inp" id="fname" value="LOREM" />
+            </div>
+            <div class="inp-grp">
+              <label for="email" class="label">EMAIL</label>
+              <input type="text" class="inp" id="email" />
+            </div>
+            <div class="inp-grp">
+              <label for="pswd" class="label">PASSWORD</label>
+              <input type="password" class="inp" />
+            </div>
+          </div>
+          <div id="form-right">
+            <div class="inp-grp">
+              <label for="lname" class="label">LAST NAME</label>
+              <input type="text" class="inp" id="lname" />
+            </div>
+            <div class="inp-grp">
+              <label for="phn" class="label">PHONE NUMBER</label>
+              <input type="number" class="inp" />
+            </div>
+            <div class="inp-grp">
+              <label for="cnf_pswd" class="label">CONFIRM PASSWORD</label>
+              <input type="password" class="inp" />
+            </div>
+          </div>
+        </div>
+      </form>
+      <div id="bot">
+        <button form="form">Create Account</button>
+        <p>Already have an account? <a href="/login/">Log in</a></p>
+      </div>
+    </div>
   </body>
 </html>
