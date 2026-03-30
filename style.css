@@ -10,7 +10,7 @@ body {
 }
 
 #left {
-  width: min(40vw, 500px);
+  width: max(40vw, 500px);
   height: 100vh;
   background-image: url("assets/left.jpg");
   background-size: cover;
@@ -74,23 +74,24 @@ body {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-  width: 85ch;
+  width: 100ch;
   gap: 10%;
 }
 .inp {
-  width: 100%;
+  width: 14vw;
+  height: 2vh;
   border-radius: 5px;
   border-color: #fcfbfb;
   border-width: 1px;
   padding: 0.75ch;
   border: 1px solid darkgray;
-  box-shadow: 1px #e5e7eb;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .inp:focus {
-  border-color: blue;
   outline: none;
+  border-color: blue;
+  box-shadow: 2px 2px 2px 1px gray;
 }
 
 .label {
@@ -118,12 +119,13 @@ form {
   flex-direction: column;
 }
 #bot button {
-  width: 25ch;
-  height: 4vh;
+  width: 20ch;
+  height: 5vh;
   margin: 25px 0px 10px 0px;
   background-color: #5a6d48;
   color: white;
   font-family: "Calibri";
+  font-size: 20px;
   font-weight: bold;
   border-radius: 5px;
   border-style: none;
@@ -154,6 +156,6 @@ form h2 {
   font-family: "Calibri";
   color: #353e4a;
 }
-.inp:invalid {
-  border-color: red;
+.inp:user-invalid {
+  border-color: red !important;
 }
